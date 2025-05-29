@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: 'Fira Code', monospace;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.nav a {
+  color: #f85149;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+  background-color: #f85149;
+  color: #0d1117;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #f85149;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #f85149;
+}
+
+.intro h3 {
+  font-family: 'Fira Code', monospace;
+  color: #58a6ff;
+  margin-bottom: 0.5rem;
+}
+
+.intro h2 {
+  font-weight: 500;
+  color: #c9d1d9;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #f85149;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.contact-button {
+  display: inline-block;
+  mar
