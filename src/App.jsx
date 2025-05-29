@@ -1,9 +1,10 @@
 import './App.css';
-import Header from './Components/Header';
-import Intro from './Components/Intro';
-import About from './Components/About';
-import Work from './Components/Work';
-import Contact from './Components/Contact';
+import Header from './components/Header';
+import Intro from './components/Intro';
+import About from './components/About';
+import Work from './components/Work';
+import Contact from './components/Contact';
+
 
 function App() {
   return (
