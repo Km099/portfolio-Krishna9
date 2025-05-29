@@ -1,3 +1,4 @@
+"homepage": "https://Km099.github.io/Proftolio-Krishna9",
 {
   "name": "my-portfolio",
   "private": true,
@@ -24,4 +25,10 @@
     "globals": "^16.0.0",
     "vite": "^6.3.5"
   }
+  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "deploy": "vite build && gh-pages -d dist"
+}
 }
