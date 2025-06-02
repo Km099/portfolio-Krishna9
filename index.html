@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Madhavi K | Full Stack Java Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhavi K | Sr. Full Stack Java Developer</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <main>
-  <aside class="sidebar">
+  <aside class="sidebar" data-sidebar>
     <div class="sidebar-info">
       <figure class="avatar-box">
-        <img src="./assets/images/my-avatar.png" alt="Madhavi K" width="80" />
+        <img src="./assets/images/my-avatar.png" alt="Madhavi K" width="80">
       </figure>
       <div class="info-content">
         <h1 class="name">Madhavi K</h1>
         <p class="title">Sr. Full Stack Java Developer</p>
       </div>
+      <button class="info_more-btn" data-sidebar-btn>
+        <span>Show Contacts</span>
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
     </div>
+
     <div class="sidebar-info_more">
       <ul class="contacts-list">
         <li class="contact-item">
@@ -42,81 +48,42 @@
   </aside>
 
   <div class="main-content">
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+        <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+      </ul>
+    </nav>
+
     <article class="about active" data-page="about">
       <header><h2 class="h2 article-title">About Me</h2></header>
       <section class="about-text">
-        <p>A Full Stack Java Developer with around 9 years of experience in designing, developing, and maintaining enterprise-grade web applications. I specialize in Java, Spring Boot, and Angular, and I’ve worked extensively on scalable microservices, REST APIs, and cloud-native apps. I've contributed to secure, high-performance systems across capital markets, insurance, and banking.</p>
-      </section>
-
-      <section class="service">
-        <h3 class="h3 service-title">What I Do</h3>
-        <ul class="service-list">
-          <li class="service-item">
-            <div class="service-icon-box"><img src="./assets/images/icon-dev.svg" alt="Dev icon" width="40" /></div>
-            <div class="service-content-box">
-              <h4 class="h4 service-item-title">Microservices & API Development</h4>
-              <p class="service-item-text">Expert in Spring Boot RESTful services and distributed system design.</p>
-            </div>
-          </li>
-          <li class="service-item">
-            <div class="service-icon-box"><img src="./assets/images/icon-app.svg" alt="Cloud icon" width="40" /></div>
-            <div class="service-content-box">
-              <h4 class="h4 service-item-title">Cloud & CI/CD</h4>
-              <p class="service-item-text">Deploying to AWS/Azure, configuring pipelines with Jenkins and GitHub Actions.</p>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section class="clients">
-        <h3 class="h3 clients-title">Recent Clients</h3>
-        <ul class="clients-list has-scrollbar">
-          <li class="clients-item"><span>Fannie Mae</span></li>
-          <li class="clients-item"><span>HCL Technologies</span></li>
-          <li class="clients-item"><span>Erie Insurance</span></li>
-        </ul>
+        <p>A Full Stack Java Developer with around 9 years of experience in designing, developing, and maintaining enterprise-grade web applications. I specialize in Java, Spring Boot, and Angular, and have worked extensively on scalable microservices, REST APIs, and cloud-native apps.</p>
+        <p>My background includes building secure, high-performance systems across capital markets, insurance, and banking industries, with hands-on experience in AWS, Azure, Docker, Kubernetes, and CI/CD pipelines.</p>
       </section>
     </article>
 
     <article class="resume" data-page="resume">
       <header><h2 class="h2 article-title">Resume</h2></header>
-
       <section class="timeline">
         <div class="title-wrapper"><h3 class="h3">Experience</h3></div>
         <ol class="timeline-list">
-          <li class="timeline-item"><h4 class="h4 timeline-item-title">Sr. Java Developer – Fannie Mae</h4><span>Jun 2023 – Present</span><p>Leading microservices development, CI/CD pipeline setup, and cloud integration on Azure.</p></li>
-          <li class="timeline-item"><h4 class="h4 timeline-item-title">Sr. Full Stack Developer – HCL Technologies</h4><span>Jun 2019 – May 2023</span><p>Migration to microservices, React & Angular frontends, AWS deployment.</p></li>
-          <li class="timeline-item"><h4 class="h4 timeline-item-title">Full Stack Developer – Erie Insurance</h4><span>Jul 2016 – Jun 2019</span><p>Built full-stack applications, backend logic, and responsive UIs.</p></li>
+          <li class="timeline-item"><h4 class="h4 timeline-item-title">Sr. Java Developer – Fannie Mae</h4><span>Jun 2023 – Present</span><p>Spring Boot, REST APIs, CI/CD with Jenkins, Angular, Azure DevOps, OpenShift.</p></li>
+          <li class="timeline-item"><h4 class="h4 timeline-item-title">Sr. Full Stack Developer – HCL Technologies</h4><span>Jun 2019 – May 2023</span><p>Microservices, Angular/React UIs, AWS deployment, Docker/Kubernetes orchestration.</p></li>
+          <li class="timeline-item"><h4 class="h4 timeline-item-title">Full Stack Developer – Erie Insurance</h4><span>Jul 2016 – Jun 2019</span><p>Developed UIs in Angular and React, created scalable APIs and backend services.</p></li>
         </ol>
-      </section>
-
-      <section class="timeline">
-        <div class="title-wrapper"><h3 class="h3">Education</h3></div>
-        <ol class="timeline-list">
-          <li class="timeline-item"><h4 class="h4 timeline-item-title">MS in Engineering Management</h4><span>2016</span><p>Trine University, Indiana</p></li>
-          <li class="timeline-item"><h4 class="h4 timeline-item-title">BTech in Mechanical Engineering</h4><span>2015</span><p>JNTUH, India</p></li>
-        </ol>
-      </section>
-
-      <section class="skill">
-        <h3 class="h3 skills-title">My Skills</h3>
-        <ul class="skills-list content-card">
-          <li class="skills-item"><div class="title-wrapper"><h5>Java</h5><data value="95">95%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 95%;"></div></div></li>
-          <li class="skills-item"><div class="title-wrapper"><h5>Spring Boot</h5><data value="90">90%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 90%;"></div></div></li>
-          <li class="skills-item"><div class="title-wrapper"><h5>Angular</h5><data value="85">85%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 85%;"></div></div></li>
-          <li class="skills-item"><div class="title-wrapper"><h5>React</h5><data value="80">80%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 80%;"></div></div></li>
-          <li class="skills-item"><div class="title-wrapper"><h5>CI/CD</h5><data value="85">85%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width: 85%;"></div></div></li>
-        </ul>
       </section>
     </article>
 
     <article class="portfolio" data-page="portfolio">
-      <header><h2 class="h2 article-title">Projects</h2></header>
+      <header><h2 class="h2 article-title">Portfolio</h2></header>
       <section class="projects">
         <ul class="project-list">
-          <li class="project-item active"><a href="#"><h3 class="project-title">Loan Origination Platform</h3><p>Modular Spring Boot backend + Angular UI for mortgage processing with JWT security.</p></a></li>
-          <li class="project-item active"><a href="#"><h3 class="project-title">Cloud Monitoring Dashboard</h3><p>Real-time dashboard with React, WebSockets, and Node.js backend for AWS/Azure metrics.</p></a></li>
-          <li class="project-item active"><a href="#"><h3 class="project-title">Portfolio Management Tool</h3><p>Multi-tier Angular/Spring Boot app with PostgreSQL for financial analytics and reporting.</p></a></li>
+          <li class="project-item active"><a href="#"><h3 class="project-title">Loan Origination Platform</h3><p>Spring Boot backend + Angular UI + JWT/OAuth2 security.</p></a></li>
+          <li class="project-item active"><a href="#"><h3 class="project-title">Cloud Monitoring Dashboard</h3><p>React + Node.js + WebSocket dashboard for cloud metrics.</p></a></li>
+          <li class="project-item active"><a href="#"><h3 class="project-title">Portfolio Management Tool</h3><p>Angular + Spring Boot microservices + PostgreSQL backend.</p></a></li>
         </ul>
       </section>
     </article>
@@ -141,6 +108,5 @@
 <script src="./assets/js/script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 </html>
