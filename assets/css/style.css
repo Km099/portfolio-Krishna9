@@ -17,6 +17,13 @@
 
 :root {
 
+  --onyx: #191919;
+  --jet: #232323;
+  --red: #FF2D2D;
+  /* ...other colors... */
+  --orange-yellow-crayola: var(--red); /* Use red for old gold highlight */
+  /* ...rest of variables... */
+}
   /**
    * colors
    */
