@@ -1,16 +1,6 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * Black and Gold Theme for Portfolio
- * Font: Garamond (with fallback to serif)
- * Author: Adapted for user request
- */
-
 :root {
 
-  /*--- Black and Gold Colors ---*/
+  /*--- Black and Red Colors ---*/
   --onyx: #191919;
   --jet: #232323;
   --eerie-black-1: #121212;
@@ -18,22 +8,24 @@
   --smoky-black: #101010;
   --white-1: #fff;
   --white-2: #f5f5f5;
-  --gold: #FFD700;
-  --gold-dark: #B8860B;
-  --gold-light: #FFF8DC;
-  --vegas-gold: #C5B358;
-  --orange-yellow-crayola: var(--gold);
+  --red: #FF2D2D;
+  --red-dark: #B22222;
+  --red-light: #ffb3b3;
   --light-gray: #cccccc;
   --light-gray-70: rgba(204, 204, 204, 0.7);
   --bittersweet-shimmer: #C85000;
 
+  /* For compatibility with old variable names */
+  --orange-yellow-crayola: var(--red);
+  --vegas-gold: var(--red-dark);
+
   /*--- Gradients ---*/
   --bg-gradient-onyx: linear-gradient(135deg, var(--onyx) 0%, var(--jet) 100%);
   --bg-gradient-jet: linear-gradient(135deg, var(--jet) 0%, var(--eerie-black-2) 100%);
-  --bg-gradient-yellow-1: linear-gradient(90deg, var(--gold-dark) 0%, var(--gold) 100%);
-  --bg-gradient-yellow-2: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-  --border-gradient-onyx: linear-gradient(135deg, var(--jet) 0%, rgba(255,215,0,0.15) 100%);
-  --text-gradient-yellow: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 100%);
+  --bg-gradient-yellow-1: linear-gradient(90deg, var(--red-dark) 0%, var(--red) 100%);
+  --bg-gradient-yellow-2: linear-gradient(135deg, var(--red) 0%, var(--red-light) 100%);
+  --border-gradient-onyx: linear-gradient(135deg, var(--jet) 0%, rgba(255,45,45,0.15) 100%);
+  --text-gradient-yellow: linear-gradient(90deg, var(--red) 0%, var(--red-light) 100%);
 
   /*--- Typography ---*/
   --ff-garamond: 'Garamond', 'Times New Roman', Times, serif;
@@ -51,11 +43,11 @@
   --fw-600: 600;
 
   /*--- Shadows ---*/
-  --shadow-1: 0 4px 24px rgba(255, 215, 0, 0.09);
-  --shadow-2: 0 16px 30px rgba(255, 215, 0, 0.09);
-  --shadow-3: 0 16px 40px rgba(255, 215, 0, 0.09);
-  --shadow-4: 0 25px 50px rgba(255, 215, 0, 0.08);
-  --shadow-5: 0 24px 80px rgba(255, 215, 0, 0.11);
+  --shadow-1: 0 4px 24px rgba(255, 45, 45, 0.09);
+  --shadow-2: 0 16px 30px rgba(255, 45, 45, 0.09);
+  --shadow-3: 0 16px 40px rgba(255, 45, 45, 0.09);
+  --shadow-4: 0 25px 50px rgba(255, 45, 45, 0.08);
+  --shadow-5: 0 24px 80px rgba(255, 45, 45, 0.11);
 
   /*--- Transitions ---*/
   --transition-1: 0.25s ease;
@@ -83,8 +75,8 @@ input, textarea {
   background: none;
   font: inherit;
 }
-::selection { background: var(--gold); color: var(--smoky-black); }
-:focus { outline-color: var(--gold); }
+::selection { background: var(--red); color: var(--smoky-black); }
+:focus { outline-color: var(--red); }
 html { font-family: var(--ff-garamond); }
 body { background: var(--smoky-black); color: var(--white-2); }
 
@@ -117,7 +109,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  color: var(--gold);
+  color: var(--red);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -139,7 +131,7 @@ article.active {
   100% { opacity: 1; }
 }
 .h2, .h3, .h4, .h5 {
-  color: var(--gold);
+  color: var(--red);
   text-transform: capitalize;
   font-family: var(--ff-garamond);
 }
@@ -157,7 +149,7 @@ article.active {
 }
 .has-scrollbar::-webkit-scrollbar { width: 5px; height: 5px; }
 .has-scrollbar::-webkit-scrollbar-track { background: var(--onyx); border-radius: 5px; }
-.has-scrollbar::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 5px; }
+.has-scrollbar::-webkit-scrollbar-thumb { background: var(--red); border-radius: 5px; }
 .has-scrollbar::-webkit-scrollbar-button { width: 20px; }
 .content-card {
   position: relative;
@@ -202,7 +194,7 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
   font-family: var(--ff-garamond);
 }
 .info-content .title {
-  color: var(--gold);
+  color: var(--red);
   background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
@@ -214,7 +206,7 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
   position: absolute; top: -15px; right: -15px;
   border-radius: 0 15px;
   font-size: 13px;
-  color: var(--gold);
+  color: var(--red);
   background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
@@ -244,13 +236,13 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
   margin-bottom: 2px;
 }
 .contact-info :is(.contact-link, time, address) {
-  color: var(--gold);
+  color: var(--red);
   font-size: var(--fs-7);
 }
 .contact-info address { font-style: normal; }
 .social-list { display: flex; justify-content: flex-start; align-items: center; gap: 15px; padding-bottom: 4px; padding-left: 7px; }
-.social-item .social-link { color: var(--gold-dark); font-size: 18px; }
-.social-item .social-link:hover { color: var(--gold); }
+.social-item .social-link { color: var(--red-dark); font-size: 18px; }
+.social-item .social-link:hover { color: var(--red); }
 
 /*-----------------------------------*\
   #NAVBAR
@@ -267,14 +259,14 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
   display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 0 10px;
 }
 .navbar-link {
-  color: var(--gold-dark);
+  color: var(--red-dark);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
   font-family: var(--ff-garamond);
 }
-.navbar-link:hover, .navbar-link:focus { color: var(--gold); }
-.navbar-link.active { color: var(--gold); font-weight: bold; }
+.navbar-link:hover, .navbar-link:focus { color: var(--red); }
+.navbar-link.active { color: var(--red); font-weight: bold; }
 
 /*-----------------------------------*\
   #ABOUT
@@ -312,7 +304,7 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
 .service-icon-box { margin-bottom: 10px; }
 .service-icon-box img { margin: auto; }
 .service-content-box { text-align: center; }
-.service-item-title { margin-bottom: 7px; color: var(--gold); }
+.service-item-title { margin-bottom: 7px; color: var(--red); }
 .service-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -322,7 +314,7 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
 
 /* testimonials */
 .testimonials { margin-bottom: 30px; }
-.testimonials-title { margin-bottom: 20px; color: var(--gold); }
+.testimonials-title { margin-bottom: 20px; color: var(--red); }
 .testimonials-list {
   display: flex; justify-content: flex-start; align-items: flex-start;
   gap: 15px; margin: 0 -15px; padding: 25px 15px 35px 15px;
@@ -337,7 +329,7 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
   border-radius: 14px;
   box-shadow: var(--shadow-1);
 }
-.testimonials-item-title { margin-bottom: 7px; color: var(--gold); }
+.testimonials-item-title { margin-bottom: 7px; color: var(--red); }
 .testimonials-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
@@ -378,7 +370,7 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
   position: absolute; top: 15px; right: 15px;
   background: var(--onyx); border-radius: 8px;
   width: 32px; height: 32px; display: flex; justify-content: center; align-items: center;
-  color: var(--gold); font-size: 18px; opacity: 0.7;
+  color: var(--red); font-size: 18px; opacity: 0.7;
 }
 .modal-close-btn:hover, .modal-close-btn:focus { opacity: 1; }
 .modal-close-btn ion-icon { --ionicon-stroke-width: 50px; }
@@ -390,7 +382,7 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
   box-shadow: var(--shadow-2);
 }
 .modal-img-wrapper > img { display: none; }
-.modal-title { margin-bottom: 4px; color: var(--gold); }
+.modal-title { margin-bottom: 4px; color: var(--red); }
 .modal-content time {
   font-size: var(--fs-6);
   color: var(--light-gray-70);
@@ -438,10 +430,10 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
   font-size: var(--fs-6);
   line-height: 1.3;
   margin-bottom: 7px;
-  color: var(--gold);
+  color: var(--red);
 }
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: var(--red-dark);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -473,7 +465,7 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
   display: flex; align-items: center; gap: 5px; margin-bottom: 8px;
 }
 .skill .title-wrapper data {
-  color: var(--gold);
+  color: var(--red);
   font-size: var(--fs-7);
   font-weight: var(--fw-300);
 }
@@ -487,7 +479,6 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
   background: var(--text-gradient-yellow);
   height: 100%;
   border-radius: inherit;
-  /* animate skill bars if desired */
   transition: width 1s cubic-bezier(0.4,0,0.2,1);
 }
 
@@ -503,7 +494,7 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
   margin-bottom: 25px;
 }
 .form-input {
-  color: var(--gold-dark);
+  color: var(--red-dark);
   font-size: var(--fs-6);
   font-weight: var(--fw-400);
   padding: 13px 20px;
@@ -512,8 +503,8 @@ main { margin: 15px 12px 75px 12px; min-width: 259px; }
   outline: none;
   background: var(--onyx);
 }
-.form-input::placeholder { font-weight: var(--fw-500); color: var(--gold-dark); }
-.form-input:focus { border-color: var(--gold); }
+.form-input::placeholder { font-weight: var(--fw-500); color: var(--red-dark); }
+.form-input:focus { border-color: var(--red); }
 textarea.form-input {
   min-height: 100px;
   height: 120px;
@@ -527,7 +518,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   position: relative;
   width: 100%;
   background: var(--border-gradient-onyx);
-  color: var(--gold);
+  color: var(--red);
   display: flex; justify-content: center; align-items: center; gap: 10px;
   padding: 13px 20px;
   border-radius: 14px;
@@ -551,7 +542,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
 /*-----------------------------------*\
-  #RESPONSIVE (keep your media queries as in original)
+  #RESPONSIVE
 \*-----------------------------------*/
-/* ...Keep your previous media queries, unchanged... */
-/* (For brevity, not included here but you can copy-paste from your current file) */
+/* ...Retain your original media queries here... */
