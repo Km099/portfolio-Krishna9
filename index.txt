@@ -3,22 +3,22 @@ vCard - Personal Portfolio
 # sidebar
 
 alt = Richard hanrick
-Richard hanrick
-Web developer
+Madhavi K
+SR Java Full Stack developer
 
 Show Contacts
 
 Email
-richard@example.com
+krishnag9609@gmail.com
 
 Phone
-+1 (213) 352-2795
++1 405-585-6669
 
 Birthday
-June 23, 1982
+January 09
 
 Location
-Sacramento, California, USA
+Dallas, Texas, USA
 
 # navbar
 
@@ -32,9 +32,7 @@ Contact
 
 About me
 
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
-
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+A Full Stack Java Developer with around 9 years of experience in designing, developing, and maintaining enterprise-grade web applications...I’ve worked in diverse domains like capital markets, insurance, and banking...
 
 
 ## service
