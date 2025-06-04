@@ -1933,3 +1933,40 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-bottom: 5px;
   display: block;
 }
+.client-expander-btn {
+  background: none;
+  border: none;
+  color: var(--white-2);
+  font: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-bottom: 0.2em;
+  text-align: center;
+  transition: color 0.2s;
+}
+.client-expander-btn:hover,
+.client-expander-btn:focus {
+  color: #ffd700;
+  outline: none;
+}
+.client-duties {
+  background: rgba(255,255,255,0.03);
+  border-left: 2px solid #ffd700;
+  padding: 0.5em 1em;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  text-align: left;
+  transition: all 0.3s;
+}
+.client-duties ul {
+  margin: 0;
+  padding-left: 1em;
+}
+.client-duties li {
+  font-size: 0.97em;
+  color: #ccc;
+  margin-bottom: 0.25em;
+}
