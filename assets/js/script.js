@@ -115,3 +115,13 @@ navigationLinks.forEach((navLink) => {
     window.scrollTo(0, 0);
   });
 });
+
+// ====== CLIENTS EXPANDABLE DUTIES FUNCTIONALITY ======
+document.querySelectorAll('.client-expander-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const duties = this.parentElement.querySelector('.client-duties');
+    if (duties) {
+      duties.style.display = (duties.style.display === 'block') ? 'none' : 'block';
+    }
+  });
+});
