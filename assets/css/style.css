@@ -1918,3 +1918,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: #ccc;
   margin-bottom: 0.5em;
 }
+/* Show dates under clients and experience timeline */
+.client-date {
+  display: block;
+  text-align: center;
+  color: var(--vegas-gold);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.timeline-date {
+  color: var(--vegas-gold);
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
