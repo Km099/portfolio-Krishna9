@@ -19,43 +19,57 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
+    /* Modal Styles */
     .custom-modal {
       display: none;
       position: fixed;
       z-index: 1000;
-      left: 0; top: 0;
-      width: 100vw; height: 100vh;
-      background: rgba(0,0,0,0.8);
-      align-items: center; justify-content: center;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
     }
+
     .custom-modal-content {
       background: #232323;
       color: #fff;
+      margin: auto;
       padding: 32px;
       border-radius: 14px;
       max-width: 480px;
-      min-width: 280px;
       position: relative;
-      margin: auto;
-      box-shadow: 0 0 32px rgba(0,0,0,0.4);
+      box-shadow: 0 0 32px rgba(0, 0, 0, 0.4);
     }
+
     .custom-close {
       color: #FFD700;
       position: absolute;
-      top: 12px; right: 16px;
+      top: 12px;
+      right: 16px;
       font-size: 28px;
       font-weight: bold;
       cursor: pointer;
       transition: color 0.2s;
     }
-    .custom-close:hover { color: #fff; }
+
+    .custom-close:hover,
+    .custom-close:focus {
+      color: #fff;
+    }
+
     .job-clickable {
       cursor: pointer;
       color: #fff;
       text-decoration: none;
       transition: color 0.2s;
     }
-    .job-clickable:hover { color: #FFD700; }
+
+    .job-clickable:hover {
+      color: #FFD700;
+    }
   </style>
 </head>
 
@@ -63,9 +77,7 @@
 
   <!-- MAIN -->
   <main>
-
     <!-- SIDEBAR -->
-    <!-- ...sidebar unchanged... -->
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
         <figure class="avatar-box">
@@ -80,15 +92,64 @@
           <ion-icon name="chevron-down"></ion-icon>
         </button>
       </div>
+
       <div class="sidebar-info_more">
-        <!-- ...contacts/social unchanged... -->
         <div class="separator"></div>
         <ul class="contacts-list">
-          <!-- ...contacts items... -->
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:krishnag9609@gmail.com" class="contact-link">krishnag9609@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+12133522795" class="contact-link">+1 405-585-6669 </a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1982-06-23">Jan 9 </time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Dallas, Texas, USA</address>
+            </div>
+          </li>
         </ul>
         <div class="separator"></div>
         <ul class="social-list">
-          <!-- ...social items... -->
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
         </ul>
       </div>
     </aside>
@@ -97,7 +158,6 @@
     <div class="main-content">
 
       <!-- NAVBAR -->
-      <!-- ...navbar unchanged... -->
       <nav class="navbar">
         <ul class="navbar-list">
           <li class="navbar-item">
@@ -113,7 +173,180 @@
       </nav>
 
       <!-- ABOUT -->
-      <!-- ...about, services, testimonials, clients unchanged... -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <section class="about-text">
+          <p>
+            I’m Madhavi K, a Full Stack Java Developer with 9 years of experience in designing and developing scalable enterprise applications.
+            I specialize in Java, Spring Boot, Angular, and cloud platforms like AWS and Azure, with a strong focus on microservices, API integration, and CI/CD automation.
+            I’ve contributed across the full SDLC in fast-paced Agile environments, delivering robust solutions across finance, insurance, and trading domains.
+          </p>
+        </section>
+
+        <!-- service -->
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Full Stack Development</h4>
+                <p class="service-item-text">
+                  Building enterprise-grade web applications using Java, Spring Boot, Angular, and React with clean architecture and scalable design.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/API.png" alt="Web development icon" width="50">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Microservices & API Integration</h4>
+                <p class="service-item-text">
+                  Designing and implementing RESTful microservices with Spring Boot and integrating them across platforms to support modular, cloud-native architectures.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/cloud_icon_transparent.png" alt="mobile app icon" width="50">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Solutions</h4>
+                <p class="service-item-text">
+                  Developing and deploying applications on AWS and Azure, leveraging services like EC2, Lambda, DynamoDB, Azure DevOps, and containerization with Docker and Kubernetes.
+                </p>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/D1.png" alt="CI/CD icon" width="50">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">CI/CD & Automation</h4>
+                <p class="service-item-text">
+                  Automating build, test, and deployment pipelines using Jenkins, Gradle, GitHub, and Terraform for faster and more reliable releases.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- testimonials -->
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <ul class="testimonials-list has-scrollbar">
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Chandra</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Madhavi’s attention to detail, strong ownership, and problem-solving
+                    mindset played a key role in the success of our cloud migration project.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/my-avatar.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Raghu</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Madhavi consistently delivers high-quality, scalable solutions. Her ability to handle complex
+                    full stack challenges—from Java microservices to Angular frontends—is unmatched.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rahul</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Madhavi consistently delivers high-quality, scalable solutions. Her ability to handle complex full stack
+                    challenges—from Java microservices to Angular frontends—is unmatched."
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sai</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    She brings a rare combination of backend mastery and front-end finesse. Madhavi is proactive,
+                    reliable, and always ready to take on leadership tasks."
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- testimonials modal -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Chandra</h4>
+              <time datetime="2021-06-14">14 June, 2021</time>
+              <div data-modal-text>
+                <p>
+                  Madhavi’s attention to detail, strong ownership, and problem-solving
+                  mindset played a key role in the success of our cloud migration project.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- clients -->
+        <section class="clients">
+          <h3 class="h3 clients-title">Clients</h3>
+          <ul class="clients-list has-scrollbar">
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/EI.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/FM.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/HCL.png" alt="client logo">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
 
       <!-- RESUME -->
       <article class="resume" data-page="resume">
@@ -168,23 +401,113 @@
           </ol>
         </section>
 
-        <!-- EDUCATION/SKILLS/CONTACT remain unchanged -->
         <section class="timeline">
-          <!-- ...education timeline... -->
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Trine University</h4>
+              <span>2015 — 2016</span>
+              <p class="timeline-text">
+                Masters in Engineering Management.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">SBIT- Khammam</h4>
+              <span>2011 — 2015</span>
+              <p class="timeline-text">
+                Bachelors in Mechanical Engineering
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Narayana Junior College, Vijayawada, India</h4>
+              <span>2009 — 2011</span>
+              <p class="timeline-text">
+                11-12 State Board
+              </p>
+            </li>
+          </ol>
         </section>
-        <section class="skill">
-          <!-- ...skills list... -->
-        </section>
-      </article>
 
-      <!-- CONTACT -->
-      <article class="contact" data-page="contact">
-        <!-- ...contact form unchanged... -->
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Java (Core & J2EE)</h5>
+                <data value="95">95%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Spring Boot / MVC</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Microservices</h5>
+                <data value="90">90%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Cloud & DevOps</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Docker & Kubernetes</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- CONTACT -->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+          <section class="contact-form">
+            <form action="#" method="post" class="form" data-form>
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              </div>
+              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+              <button class="form-btn" type="submit" data-form-btn disabled>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
       </article>
     </div>
   </main>
 
-  <!-- Four Job Modals -->
+  <!-- Modals for job descriptions -->
   <div id="fannieMaeModal" class="custom-modal">
     <div class="custom-modal-content">
       <span class="custom-close" id="closeFannieMaeModal">&times;</span>
@@ -240,9 +563,8 @@
   <!-- main JavaScript -->
   <script src="./assets/js/script.js"></script>
 
-  <!-- Modal JavaScript -->
   <script>
-    // Fannie Mae Modal
+    // Modal logic for all jobs
     document.getElementById('fannie-mae-job').onclick = function () {
       document.getElementById('fannieMaeModal').style.display = 'flex';
     };
@@ -250,7 +572,6 @@
       document.getElementById('fannieMaeModal').style.display = 'none';
     };
 
-    // HCL Modal
     document.getElementById('hcl-job').onclick = function () {
       document.getElementById('hclModal').style.display = 'flex';
     };
@@ -258,7 +579,6 @@
       document.getElementById('hclModal').style.display = 'none';
     };
 
-    // Erie Modal
     document.getElementById('erie-job').onclick = function () {
       document.getElementById('erieModal').style.display = 'flex';
     };
@@ -266,7 +586,6 @@
       document.getElementById('erieModal').style.display = 'none';
     };
 
-    // AppShark Modal
     document.getElementById('appshark-job').onclick = function () {
       document.getElementById('appsharkModal').style.display = 'flex';
     };
@@ -274,7 +593,7 @@
       document.getElementById('appsharkModal').style.display = 'none';
     };
 
-    // Close modal by clicking outside
+    // Click outside modal closes it
     window.onclick = function (event) {
       ['fannieMaeModal', 'hclModal', 'erieModal', 'appsharkModal'].forEach(function (modalId) {
         var modal = document.getElementById(modalId);
