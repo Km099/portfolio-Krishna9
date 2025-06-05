@@ -2002,3 +2002,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 .custom-close:hover,
 .custom-close:focus { color: #fff; }
+.clients-list img {
+  width: 80px;         /* Set a fixed width */
+  height: 80px;        /* Set a fixed height */
+  object-fit: contain; /* Keeps aspect ratio, fits within box */
+  display: block;
+  margin: 0 auto;      /* Center the image horizontally */
+}
+.clients-list li {
+  display: inline-block;           /* Makes the list horizontal */
+  vertical-align: middle;          /* Aligns images vertically in the middle */
+  margin: 0 12px;                  /* Space between logos */
+  text-align: center;              /* Ensures centering inside li */
+}
