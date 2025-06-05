@@ -470,5 +470,23 @@
       </p>
     </div>
   </div>
+  <script>
+  // Modal logic for Fannie Mae
+  document.getElementById('fannie-mae-job').onclick = function() {
+    document.getElementById('fannieMaeModal').style.display = 'flex';
+  };
+  document.getElementById('closeFannieMaeModal').onclick = function() {
+    document.getElementById('fannieMaeModal').style.display = 'none';
+  };
+  // Optional: click outside modal to close
+  window.onclick = function(event) {
+    var modal = document.getElementById('fannieMaeModal');
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  }
+</script>
+</body>
+</html>
 </body>
 </html>
