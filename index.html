@@ -314,10 +314,17 @@
           </div>
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Fannie Mae-Sr. Full Stack Developer</h4>
+              <h4 
+                class="h4 timeline-item-title" 
+                id="fannie-mae-job" 
+                style="cursor:pointer; color:var(--orange-yellow-crayola); 
+              text-decoration:underline;"
+                >
+                   Fannie Mae-Sr. Full Stack Developer
+              </h4>
               <span>Jun 2023 - Present</span>
               <p class="timeline-text">
-                Loan Origination Platform 
+                 Loan Origination Platform
               </p>
             </li>
             <li class="timeline-item">
@@ -449,5 +456,19 @@
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   <!-- main JavaScript -->
   <script src="./assets/js/script.js"></script>
+
+  <!-- Fannie Mae Job Description Modal -->
+  <div id="fannieMaeModal" class="custom-modal">
+    <div class="custom-modal-content">
+      <span class="custom-close" id="closeFannieMaeModal">&times;</span>
+      <h3>Fannie Mae — Sr. Full Stack Developer</h3>
+      <p>
+        Led development of a cloud-native application using Kotlin, Angular 12, and Azure CI/CD pipelines.<br>
+        Migrated legacy systems to modern architectures with microservices, REST APIs, and Docker on OpenShift.<br>
+        Built integration testing frameworks, automated deployments with Jenkins/Gradle, and implemented advanced monitoring.<br>
+        Enhanced data performance using Spring Boot, RXJava, Couchbase, and PostgreSQL.
+      </p>
+    </div>
+  </div>
 </body>
 </html>
