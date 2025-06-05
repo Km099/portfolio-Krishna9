@@ -19,52 +19,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    /* Custom Modal Styles */
     .custom-modal {
       display: none;
       position: fixed;
       z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.8);
-      align-items: center;
-      justify-content: center;
+      left: 0; top: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.8);
+      align-items: center; justify-content: center;
     }
     .custom-modal-content {
-      background: var(--eerie-black-2, #232323);
+      background: #232323;
       color: #fff;
-      margin: auto;
       padding: 32px;
       border-radius: 14px;
       max-width: 480px;
+      min-width: 280px;
       position: relative;
+      margin: auto;
       box-shadow: 0 0 32px rgba(0,0,0,0.4);
     }
     .custom-close {
       color: #FFD700;
       position: absolute;
-      top: 12px;
-      right: 16px;
+      top: 12px; right: 16px;
       font-size: 28px;
       font-weight: bold;
       cursor: pointer;
       transition: color 0.2s;
     }
-    .custom-close:hover,
-    .custom-close:focus {
-      color: #fff;
-    }
+    .custom-close:hover { color: #fff; }
     .job-clickable {
       cursor: pointer;
       color: #fff;
       text-decoration: none;
       transition: color 0.2s;
     }
-    .job-clickable:hover {
-      color: var(--orange-yellow-crayola);
-    }
+    .job-clickable:hover { color: #FFD700; }
   </style>
 </head>
 
@@ -74,8 +65,8 @@
   <main>
 
     <!-- SIDEBAR -->
+    <!-- ...sidebar unchanged... -->
     <aside class="sidebar" data-sidebar>
-      <!-- ...SIDEBAR CONTENT UNCHANGED... -->
       <div class="sidebar-info">
         <figure class="avatar-box">
           <img src="./assets/images/images.jpeg" alt="iMadhavi k" width="80">
@@ -89,9 +80,16 @@
           <ion-icon name="chevron-down"></ion-icon>
         </button>
       </div>
-      <!-- ...rest unchanged... -->
       <div class="sidebar-info_more">
-        <!-- ...unchanged... -->
+        <!-- ...contacts/social unchanged... -->
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <!-- ...contacts items... -->
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <!-- ...social items... -->
+        </ul>
       </div>
     </aside>
 
@@ -99,10 +97,23 @@
     <div class="main-content">
 
       <!-- NAVBAR -->
-      <!-- ...unchanged... -->
+      <!-- ...navbar unchanged... -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
 
       <!-- ABOUT -->
-      <!-- ...unchanged... -->
+      <!-- ...about, services, testimonials, clients unchanged... -->
 
       <!-- RESUME -->
       <article class="resume" data-page="resume">
@@ -157,25 +168,23 @@
           </ol>
         </section>
 
-        <!-- ...EDUCATION/SKILLS... -->
+        <!-- EDUCATION/SKILLS/CONTACT remain unchanged -->
         <section class="timeline">
-          <!-- ...education code unchanged... -->
+          <!-- ...education timeline... -->
         </section>
-
         <section class="skill">
-          <!-- ...skills code unchanged... -->
+          <!-- ...skills list... -->
         </section>
       </article>
 
       <!-- CONTACT -->
-      <!-- ...unchanged... -->
       <article class="contact" data-page="contact">
         <!-- ...contact form unchanged... -->
       </article>
     </div>
   </main>
 
-  <!-- Modals for job descriptions -->
+  <!-- Four Job Modals -->
   <div id="fannieMaeModal" class="custom-modal">
     <div class="custom-modal-content">
       <span class="custom-close" id="closeFannieMaeModal">&times;</span>
