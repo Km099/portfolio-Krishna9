@@ -1970,3 +1970,35 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: #ccc;
   margin-bottom: 0.25em;
 }
+/* Custom Modal Styles */
+.custom-modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0; top: 0; 
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.8);
+  align-items: center; 
+  justify-content: center;
+}
+.custom-modal-content {
+  background: var(--eerie-black-2, #232323);
+  color: #fff;
+  margin: auto;
+  padding: 32px;
+  border-radius: 14px;
+  max-width: 480px;
+  position: relative;
+  box-shadow: 0 0 32px rgba(0,0,0,0.4);
+}
+.custom-close {
+  color: #FFD700;
+  position: absolute;
+  top: 12px; right: 16px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.custom-close:hover,
+.custom-close:focus { color: #fff; }
