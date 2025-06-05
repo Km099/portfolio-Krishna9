@@ -484,8 +484,9 @@
           </ul>
         </section>
 
-        <!-- CONTACT -->
-        <!-- CONTACT -->
+      </article>
+
+      <!-- CONTACT PAGE -->
       <article class="contact" data-page="contact">
         <header>
           <h2 class="h2 article-title">Contact</h2>
@@ -602,6 +603,28 @@
         }
       });
     };
+
+    // SPA page navigation logic for showing correct section
+    document.querySelectorAll('.navbar-link').forEach(function(button) {
+      button.addEventListener('click', function() {
+        // Remove active from all navbar links
+        document.querySelectorAll('.navbar-link').forEach(function(btn) {
+          btn.classList.remove('active');
+        });
+        // Add active to this navbar link
+        button.classList.add('active');
+
+        // Hide all articles
+        document.querySelectorAll('.main-content > article').forEach(function(article) {
+          article.classList.remove('active');
+        });
+
+        // Show the correct article
+        const section = button.textContent.trim().toLowerCase();
+        document.querySelector('.main-content > article.' + section).classList.add('active');
+      });
+    });
+
   </script>
 </body>
 </html>
